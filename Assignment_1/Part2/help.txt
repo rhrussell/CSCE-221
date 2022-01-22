@@ -1,0 +1,38 @@
+// deep copy
+Copy Constructor:
+Collection c1;
+//assume that c1 has stress balls
+Collection c2(c1);
+
+// create c2 and intialize in the same way as c1
+
+Copy Assignment:
+Collection c1;
+//assume that c1 has stress balls
+Collection c2;
+c2 = c1;
+
+//start with two objects modify one which is on the lhs of assignment by 
+the object which is one the rhs
+
+
+//shallow copy
+Move Constructor:
+Collection c1;
+//assume that c1 has stress balls
+Collection c2 = move(c1);
+
+//
+
+Move Assignment:
+Collection* c1;
+//assume that c1 has stress balls
+Collection c2;
+c2 = move(c1);
+
+-Copy Constructor will have the same code as Move Constructor because they accomplish the
+same thing just have different predicaments
+Copy Assignment will have the same code as Move Assignment because they accomplish the
+same thing just have different predicaments 
+
+Collection.h Collection.cpp Stress_ball.cpp Stress_ball.h Collection_test.cpp
